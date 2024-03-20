@@ -1,0 +1,13 @@
+/*css do botao switch pagina index*/
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: rgb(188, 163, 113); /* Cor do círculo dentro do botão no estado ligado */
+    background-image: url('papagaio.png');
+    border-radius: 50%;
+    transition: transform 0.4s;
+  }
