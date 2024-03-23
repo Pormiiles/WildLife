@@ -11,3 +11,20 @@
     border-radius: 50%;
     transition: transform 0.4s;
   }
+
+
+.mapa-biomas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; /* Centers the container horizontally */
+    /* Optionally, you can set a specific height and width for the container */
+    /* height: 100%; */
+    /* width: 100%; */
+}
+
+/* Optionally, you can style the image within the container */
+.mapa-biomas img {
+    max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+    height: auto; /* Maintain aspect ratio */
+}
