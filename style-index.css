@@ -91,6 +91,14 @@ main {
   transform: rotate(180deg);
 }
 
+.main-container-animal {
+  display: none; /* Oculta todos os textos */
+}
+
+.main-container-animal.selected {
+  display: block; /* Mostra apenas o texto selecionado */
+}
+
 /* Estilo do rodapé */
 footer {
   background-color: #D7BE82;

@@ -1,39 +1,44 @@
-const slider = document.querySelectorAll('.main-slider');
+const sliderImages = document.querySelectorAll('.main-slider');
 const btnPrev = document.getElementById('main-prev-button');
 const btnNext = document.getElementById('main-next-button');
+const animalTexts = document.querySelectorAll('.main-container-animal');
 
 let currentSlide = 0;
 
 function hideSlider(){
-    slider.forEach(item => item.classList.remove('on'))
+    sliderImages.forEach(item => item.classList.remove('on'));
+    animalTexts.forEach(item => item.classList.remove('selected'));
 }
 
 function showSlider(){
-    slider[currentSlide].classList.add('on')
+    sliderImages[currentSlide].classList.add('on');
+    animalTexts[currentSlide].classList.add('selected');
 }
 
 function nextSlider() {
-    hideSlider()
-    if(currentSlide === slider.length -1){
-        currentSlide = 0
+    hideSlider();
+    if(currentSlide === sliderImages.length -1){
+        currentSlide = 0;
     } else {
-        currentSlide++
+        currentSlide++;
     }
-    showSlider()
+    showSlider();
 }
 
 function prevSlider() {
-    hideSlider()
+    hideSlider();
     if(currentSlide === 0){
-        currentSlide = slider.length -1
+        currentSlide = sliderImages.length -1;
     } else {
-        currentSlide--
+        currentSlide--;
     }
-    showSlider()
+    showSlider();
 }
 
-btnNext.addEventListener('click', nextSlider)
-btnPrev.addEventListener('click', prevSlider)
+btnNext.addEventListener('click', nextSlider);
+btnPrev.addEventListener('click', prevSlider);
+
+showSlider();
 
 // codigo do botao swicht
 document.getElementById("mySwitch").addEventListener("change", function() {
@@ -42,5 +47,4 @@ document.getElementById("mySwitch").addEventListener("change", function() {
     } else {
       window.location.href = "index.html"; // Altere "pagina2.html" para o caminho da sua outra página destino
     }
-  });
-  
+});
