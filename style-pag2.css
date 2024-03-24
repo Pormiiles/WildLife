@@ -1,4 +1,12 @@
-    /*css do botao switch pagina pag2*/
+/* Configuração global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+
+/*css do botao switch pagina pag2*/
 .slider:before {
     position: absolute;
     content: "";
@@ -10,8 +18,86 @@
     background-image: url('arvore.png');
     border-radius: 50%;
     transition: transform 0.4s;
-  }
+}
 
+body {
+    background-color: #9EA93F;
+}
+
+/* Estilo do cabeçalho */
+header { 
+    background-color: #60712F;
+    height: 178px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo do conteúdo principal */
+main {
+    background-color: white;
+    width: 1100px;
+    margin: auto;
+}
+
+/* Estilo do CARROSSEL na main */
+.main-carrossel{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.main-images{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+}
+
+.main-images img{
+    border-radius: 50%;
+}
+
+.main-slider{
+    opacity: 0;
+    transition: opacity .2s;
+    position: absolute;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.on{
+    opacity: 1;
+}
+
+#main-prev-button, #main-next-button{
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#main-prev-button img, #main-next-button img{
+    width: 100%;
+    height: 100%;
+}
+
+#main-prev-button{
+    transform: rotate(180deg);
+}
+
+.main-container-biomas {
+    display: none; /* Oculta todos os textos */
+}
+
+.main-container-biomas.selected {
+    display: block; /* Mostra apenas o texto selecionado */
+}
 
 .mapa-biomas {
     display: flex;
@@ -27,4 +113,13 @@
 .mapa-biomas img {
     max-width: 100%; /* Ensure the image doesn't exceed its container's width */
     height: auto; /* Maintain aspect ratio */
+}
+  
+  /* Estilo do rodapé */
+footer {
+    background-color: #60712F;
+    height: 178px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
