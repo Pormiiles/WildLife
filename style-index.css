@@ -183,6 +183,13 @@ main {
   display: block; /* Mostra apenas o texto selecionado */
 }
 
+.main-botao-h3 {
+  font-family: "Rubik Scribble", system-ui;
+  margin: auto;
+  margin-top: 30px;
+  font-size: 20px;
+}
+
 .main-botao {
   border-top: 1px solid black;
   width: 935px;
