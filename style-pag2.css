@@ -209,6 +209,13 @@ main {
     margin: auto;
     text-align: center;
   }
+
+  .main-botao-h3 {
+    font-family: "Rubik Scribble", system-ui;
+    margin: auto;
+    margin-top: 30px;
+    font-size: 20px;
+  }
   
   .main-botao-item {
     width: 200px;
