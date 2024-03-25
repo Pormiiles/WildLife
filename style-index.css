@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Rubik+Scribble&display=swap');
+
+
 /* Configuração global */
 * {
   margin: 0;
@@ -69,11 +72,55 @@ header {
   justify-content: center;
 }
 
+p {
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+}
+
+.header-h1 {
+  font-family: "Rubik Scribble", system-ui;
+}
+
 /* Estilo do conteúdo principal */
 main {
   background-color: white;
   width: 1100px;
   margin: auto;
+}
+
+.main-p1 {
+  width: 601px;
+  margin: auto;
+  padding-top: 25px;
+}
+
+.main-p2 {
+  width: 601px; 
+  margin: auto;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.main-h1 {
+  font-family: "Rubik Scribble", system-ui;
+  text-align: center;
+}
+
+.main-container-animal-h3 {
+  font-family: "Rubik Scribble", system-ui;
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.main-container-animal-p {
+  padding-bottom: 30px;
+}
+
+.main-container-animal {
+  margin: auto;
+  width: 601px;
+  margin-top: -100px;
 }
 
 /* Estilo do CARROSSEL na main */
@@ -84,6 +131,7 @@ main {
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  margin-top: -100px;
 }
 
 .main-images{
@@ -133,6 +181,25 @@ main {
 
 .main-container-animal.selected {
   display: block; /* Mostra apenas o texto selecionado */
+}
+
+.main-botao {
+  border-top: 1px solid black;
+  width: 935px;
+  margin: auto;
+  text-align: center;
+}
+
+.main-botao-item {
+  width: 200px;
+  height: 50px;
+  margin: 25px 0px;
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+  background-color: #755C1B;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 /* Estilo do rodapé */
