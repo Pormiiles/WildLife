@@ -209,7 +209,11 @@ main {
 .mapa-biomas-title {
     font-family: "Rubik Scribble", system-ui;
     font-family: 18px;
-    margin: 30px 0px;
+    margin-top: 30px;
+}
+
+.mapa-biomas-p {
+    margin-bottom: 30px;
 }
 
 /* Optionally, you can style the image within the container */
