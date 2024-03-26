@@ -63,6 +63,7 @@ body {
 
 p {
     font-family: "Oswald", sans-serif;
+    font-size: 18px;
 }
 
 /* Estilo do cabeçalho */
@@ -72,10 +73,12 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 15px;
 }
 
 .header-h1 {
     font-family: "Rubik Scribble", system-ui;
+    font-size: 48px;
 }
 
 /* Estilo do conteúdo principal */
@@ -99,8 +102,12 @@ main {
   }
   
   .main-h1 {
+    border-top: 1px solid black;
+    padding-top: 30px;
     font-family: "Rubik Scribble", system-ui;
     text-align: center;
+    margin: auto;
+    width: 935px;
   }
   
   .main-container-biomas-h3 {
@@ -187,13 +194,22 @@ main {
 
 .mapa-biomas {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    padding: 30px 0px; /* Centers the container horizontally */
+    padding-bottom: 30px; /* Centers the container horizontally */
+    border-top: 1px solid black;
+    width: 935px;
     /* Optionally, you can set a specific height and width for the container */
     /* height: 100%; */
     /* width: 100%; */
+}
+
+.mapa-biomas-title {
+    font-family: "Rubik Scribble", system-ui;
+    font-family: 18px;
+    margin: 30px 0px;
 }
 
 /* Optionally, you can style the image within the container */
@@ -227,6 +243,10 @@ main {
     color: white;
     border-radius: 5px;
     cursor: pointer;
+  }
+
+  .main-botao-item:hover {
+    background-color: #46744a;
   }
   
   /* Estilo do rodapé */
